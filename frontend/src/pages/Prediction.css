@@ -1,0 +1,248 @@
+.prediction-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1000px;
+}
+
+.prediction-loading {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--text-muted);
+}
+
+.prediction-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.pred-title-group p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Hero card */
+.prediction-hero-card {
+  background: linear-gradient(135deg, #ffffff 60%, #eef2ff);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-badge {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.hero-score-val {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.hero-score-val h1 {
+  font-size: 56px;
+  font-weight: 850;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.score-denominator {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.hero-meta-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.confidence-tag {
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.trend-tag {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.recommendation-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.callout-icon {
+  background: #eef2ff;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendation-callout h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.recommendation-callout p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.action-study-btn {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+.action-study-btn:hover {
+  background: var(--primary-hover);
+}
+
+/* Explanation Grid */
+.explanation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.expl-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.expl-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.expl-card-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.pos-icon {
+  color: var(--success);
+}
+
+.warn-icon {
+  color: #d97706;
+}
+
+.expl-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expl-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.check-bullet {
+  color: var(--success);
+  font-weight: 800;
+}
+
+.warn-bullet {
+  color: #d97706;
+  font-weight: 800;
+}
+
+/* Disclaimer Banner */
+.disclaimer-banner {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.disclaimer-icon {
+  color: #64748b;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.disclaimer-content h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.disclaimer-content p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  .prediction-hero-card {
+    grid-template-columns: 1fr;
+  }
+  .explanation-grid {
+    grid-template-columns: 1fr;
+  }
+}
