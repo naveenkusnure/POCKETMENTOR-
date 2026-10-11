@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-let rawUrl = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+let rawUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD 
+  ? 'https://pocketmentor-backend-0k1b.onrender.com/api' 
+  : 'http://localhost:8080/api');
 // Strip trailing slash if present
 rawUrl = rawUrl.replace(/\/+$/, '');
 // Ensure it ends with /api
